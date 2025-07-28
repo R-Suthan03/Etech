@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+    text-decoration: none;
+}
+
+header nav{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav .logo a{
+    font-size: 1.8rem;
+    color: black;
+    text-decoration: none;
+}
+
+header nav li{
+    display: inline-block;
+}
+
+header nav li a{
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 75px;
+    text-decoration: none;
+}
+header nav li a i{
+    position: relative;
+    top: 2px;
+    font-size: 18px;
+}
+
+header nav .buttons a{
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+header nav  a:hover{
+    color: #B777F3;
+    /* border: 2px solid; */
+}
+.buttons .enroll{
+    padding: 8px 15px;
+    border: 3px solid lightgray;
+    border-radius: 5px;
+    
+}
+
+.buttons .free-btn{
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: rgb(230, 226, 226);
+    background: linear-gradient(99.91deg, #B777F3 0.85%, #E689BC 97%);
+
+}
+
+
+/* heading */
+
+.heading{
+  width: 70%;
+  margin: auto;
+}
+
+.heading h1{
+    font-size: 4.3rem;
+    /* font-size: 85px; */
+    text-align: center;
+    line-height: 90px;
+    font-weight: 600;
+}
+
+.heading .violet{
+    color: #B777F3;
+}
+
+.heading .pink{
+    color: #E689BC;
+}
+
+.form-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px 0px;
+}
+
+.form-container .wellcome{
+    width: 30%;
+}
+
+.form-container .wellcome h1{
+    font-size: 3rem;
+}
+
+.form-container .wellcome p{
+    margin-top: 20px;
+    line-height: 28px;
+    font-size: 1.3rem;
+    
+}
+
+
+.form-container .form{
+    width: 550px;
+    height: 700px;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #BE7AEB 0%, #E187C2 100%);
+}
+.form-container .form h2{
+   font-size: 1.7rem;
+   margin: 30px 5px;
+   font-weight: 700;
+}
+
+.form-container .form h2 span{
+    color: hsla(0, 0%, 100%, 1) ;
+}
+
+
+.form-container .form label{
+    color:hsla(0, 0%, 100%, 1) ;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.form-container .form .input-grp{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+
+.form-container .form .single-input{
+     padding: 10px 20px;
+
+}
+.form-container .form .single-input input{
+     width: 100%;
+}
+
+.form-container .form input{
+    padding: 10px;
+    background: transparent;
+    border: none;
+    /* border-bottom: 1.5px solid white; */
+    border-bottom: 1px solid hsla(0, 0%, 100%, 1);
+}
+
+.form-container .form input:focus{
+    outline: none;
+}
+
+.form-container .form .button a{
+    padding: 10px 50px;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    color: #B777F3;
+}
+
+
+.footer{
+    height: 45vh;
+    background: linear-gradient(99.91deg, #B777F3 0.85%, #E689BC 97%);
+    color: white;
+    padding: 30px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+footer .logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 50px;
+}
+
+footer .etech{
+    width: 25%;
+}
+
+footer .etech small{
+    font-size: 12px;
+}
+
+footer h4{
+    font-size: 1.4rem;
+}
+
+footer .quick li{
+    margin-top: 10px;
+    margin-left: 13px;
+    line-height: 24px;
+}
+
+footer .social a{
+    line-height: 34px;
+    color: white;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+footer .social i{
+   position: relative;
+   top: 10px;
+}
+
+footer .contact a{
+    position: relative;
+    left: 10px;
+    line-height: 34px;
+    color: white;
+}
+
+ @media screen and (min-width: 768px) and (max-width:991px){  
+   header nav li a{
+    margin-right: 55px;
+   }
+
+   header nav .buttons a{
+    margin-right: 10px;
+   }
+
+}
+
+@media screen and (min-width: 576px) and (max-width:767px){
+
+    header nav li a{
+    margin-right: 15px;
+   }
+
+    header nav .buttons a{
+    margin-right: 5px;
+   }
+
+   .heading h1{
+    font-size: 3.5rem;
+    line-height: 60px;
+   }
+
+    .form-container .wellcome{
+    width: 80%;
+    margin-bottom: 20px;
+   }
+
+   .form-container{
+    flex-direction: column;
+   }
+
+     .form-container .form{
+    width: 510px;
+    }
+    .footer{
+    height: auto;
+    background: linear-gradient(99.91deg, #B777F3 0.85%, #E689BC 97%);
+    }
+
+    footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   }
+
+    footer .etech{
+    width: 60%;
+    margin-bottom: 20px;
+   }
+
+    footer .quick li{
+     margin-left: 20px;
+   }
+   footer .social{
+    margin-top: 20px;
+   }
+
+   footer .contact{
+    margin-top: 20px;
+   }
+
+}
+
+@media screen and (max-width: 575px) {
+
+    header nav {
+        width: 100vw;
+    }
+
+    header nav .logo a{
+        font-size: 24px;
+        margin-left: 5px;
+    }
+
+
+   header nav li a{
+    margin-right: 10px;
+   }
+
+    header nav .buttons a{
+    margin-right: 5px;
+    font-size: 14px;
+   }
+
+   .buttons{
+    width: 200px;
+   }
+
+   .free-btn{
+    display: none;
+   }
+   
+   .heading{
+    width: 90%;
+   }
+
+    .heading h1{
+    font-size: 2.5rem;
+    line-height: 45px;
+   }
+
+
+   .form-container .wellcome{
+    width: 80%;
+    margin-bottom: 20px;
+   }
+
+   .form-container{
+    flex-direction: column;
+   }
+
+   .form-container .form{
+        width: 100vw;
+        padding: 20px 0px;
+        height: 730px;
+
+    }
+
+    .form-container .form .input-grp{
+        gap: 20px;
+    }
+
+   .footer{
+    height: auto;
+    background: linear-gradient(99.91deg, #B777F3 0.85%, #E689BC 97%);
+    }
+ 
+ 
+    footer{
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+
+   footer .etech{
+    width: 60%;
+    margin-bottom: 20px;
+   }
+
+   footer .quick li{
+     margin-left: 20px;
+   }
+   footer .social{
+    margin-top: 20px;
+   }
+
+   footer .contact{
+    margin-top: 20px;
+   }
+
+}
+
